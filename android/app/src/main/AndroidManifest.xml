@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.colorblindgame">
+    package="com.game.colorblind">
    <application
         android:label="colorblindgame"
         android:icon="@mipmap/ic_launcher">

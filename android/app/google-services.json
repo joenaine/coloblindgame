@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "637075402495",
+    "project_id": "colorblind-game",
+    "storage_bucket": "colorblind-game.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637075402495:android:20ad48a0f27ef57011a6ca",
+        "android_client_info": {
+          "package_name": "com.game.colorblind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637075402495-kp607e7ccllv4o9okh363igac4qd4u8d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOcb3z7uDYI5oJjf66GkYFz8LjawhEMZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637075402495-kp607e7ccllv4o9okh363igac4qd4u8d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

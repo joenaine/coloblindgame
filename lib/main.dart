@@ -1,9 +1,22 @@
+import 'package:colorblindgame/pages/records/records.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 import 'package:colorblindgame/pages/home/home.dart';
 import 'package:colorblindgame/pages/game/game.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  // await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: const FirebaseOptions(
+        apiKey: "AIzaSyC_NF6nwH087rVUeNOXwCZ_ddfw-uupZuo",
+        authDomain: "colorblind-game.firebaseapp.com",
+        projectId: "colorblind-game",
+        storageBucket: "colorblind-game.appspot.com",
+        messagingSenderId: "637075402495",
+        appId: "1:637075402495:web:85557a9ceac714f111a6ca"),
+  );
   runApp(MyApp());
 }
 
@@ -26,7 +39,11 @@ class MyApp extends StatelessWidget {
       ),
       home: Home(),
       // defaultRoute: '/home',
-      routes: {'/home': (context) => Home(), '/game': (context) => Game()},
+      routes: {
+        '/home': (context) => Home(),
+        '/game': (context) => Game(),
+        '/records': (context) => Records()
+      },
     );
   }
 }

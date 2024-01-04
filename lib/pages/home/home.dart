@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:colorblindgame/routes.dart';
 
@@ -56,7 +55,18 @@ class Home extends StatelessWidget {
                   Navigator.of(context).push(Routes.createRoute(context));
                 },
                 style: buttonStyle,
-              )
+              ),
+              SizedBox(height: 20),
+              ElevatedButton(
+                child: const Text('Records', style: TextStyle(fontSize: 25)),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/records');
+                  // Navigator.of(context).push(Routes.createRoute(context));
+                },
+                style: ElevatedButton.styleFrom(
+                    padding: EdgeInsets.fromLTRB(60, 20, 60, 20),
+                    backgroundColor: ([...Colors.primaries]..shuffle()).first),
+              ),
             ],
           ),
         ),

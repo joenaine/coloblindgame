@@ -1,4 +1,4 @@
-package com.example.colorblindgame
+package com.game.colorblind
 
 import io.flutter.embedding.android.FlutterActivity
 
