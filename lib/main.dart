@@ -7,16 +7,16 @@ import 'package:colorblindgame/pages/game/game.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // await Firebase.initializeApp();
-  await Firebase.initializeApp(
-    options: const FirebaseOptions(
-        apiKey: "AIzaSyC_NF6nwH087rVUeNOXwCZ_ddfw-uupZuo",
-        authDomain: "colorblind-game.firebaseapp.com",
-        projectId: "colorblind-game",
-        storageBucket: "colorblind-game.appspot.com",
-        messagingSenderId: "637075402495",
-        appId: "1:637075402495:web:85557a9ceac714f111a6ca"),
-  );
+  await Firebase.initializeApp();
+  // await Firebase.initializeApp(
+  //   options: const FirebaseOptions(
+  //       apiKey: "AIzaSyC_NF6nwH087rVUeNOXwCZ_ddfw-uupZuo",
+  //       authDomain: "colorblind-game.firebaseapp.com",
+  //       projectId: "colorblind-game",
+  //       storageBucket: "colorblind-game.appspot.com",
+  //       messagingSenderId: "637075402495",
+  //       appId: "1:637075402495:web:85557a9ceac714f111a6ca"),
+  // );
   runApp(MyApp());
 }
 
